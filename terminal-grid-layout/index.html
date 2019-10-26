@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Title</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 30px;
+        }
+
+        div {
+            outline: 3px solid #000000;
+        }
+
+        .terminal-demo {
+            display: grid;
+            grid-template-areas: "sidebar-left terminal-graphs sidebar-right";
+            grid-template-columns: 20% 1fr 20%;
+            height: 100vh;
+        }
+
+        .sidebar-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-left__logo {
+            padding: 2rem 5rem;
+            background-color: #802392;
+        }
+
+        .sidebar-left__table {
+            padding: 2rem 5rem;
+            height: 100%;
+            background-color: #995FA3;
+        }
+
+        .terminal-graphs {
+            width: 100%;
+            padding: 2rem 5rem;
+            background-color: #9A98B5;
+        }
+
+        .sidebar-right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-right__logo {
+            padding: 2rem 4rem;
+            background-color: #A0B9C6;
+        }
+
+        .sidebar-right__table {
+            height: 100%;
+            padding: 2rem 5rem;
+            background-color: #A5F8D3;
+        }
+
+        .bottom-table {
+            padding: 2rem 3rem;
+            background-color: black;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="terminal-demo">
+    <div id="sidebar-left" class="sidebar-left">
+        <div class="sidebar-left__logo">Logo</div>
+        <div class="sidebar-left__table">Sidebar-left</div>
+    </div>
+    <div id="terminal-graphs" class="terminal-graphs">Terminal-graphs</div>
+    <div id="sidebar-right" class="sidebar-right">
+        <div class="sidebar-right__logo">Switch account</div>
+        <div class="sidebar-right__table">Sidebar-right</div>
+    </div>
+</div>
+<div class="bottom-table">Bottom-table</div>
+</body>
+</html>
