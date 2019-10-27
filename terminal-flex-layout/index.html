@@ -20,10 +20,26 @@
         .terminal-demo {
             display: flex;
             justify-content: space-between;
-            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .sidebar-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+        }
+
+        .sidebar-right {
             display: flex;
             flex-direction: column;
         }
@@ -33,21 +49,9 @@
             background-color: #802392;
         }
 
-        .sidebar-left__table {
+        .center__logo {
             padding: 2rem 5rem;
-            height: 100%;
-            background-color: #995FA3;
-        }
-
-        .terminal-graphs {
-            width: 100%;
-            padding: 2rem 5rem;
-            background-color: #9A98B5;
-        }
-
-        .sidebar-right {
-            display: flex;
-            flex-direction: column;
+            background-color: tomato;
         }
 
         .sidebar-right__logo {
@@ -55,13 +59,37 @@
             background-color: #A0B9C6;
         }
 
+        .sidebar-left__table {
+            flex: 1;
+            padding: 2rem 5rem;
+            background-color: #995FA3;
+        }
+
+        .terminal-graphs__table {
+            flex: 1;
+            padding: 2rem 5rem;
+            background-color: #9A98B5;
+        }
+
         .sidebar-right__table {
-            height: 100%;
+            flex: 1;
             padding: 2rem 5rem;
             background-color: #A5F8D3;
         }
 
-        .bottom-table {
+        .bottom-left {
+            padding: 2rem 5rem;
+            background-color: black;
+            color: #ffffff;
+        }
+
+        .bottom-center {
+            padding: 2rem 5rem;
+            background-color: gray;
+            color: #ffffff;
+        }
+
+        .bottom-right {
             padding: 2rem 5rem;
             background-color: black;
             color: #ffffff;
@@ -71,15 +99,26 @@
 <body>
 <div class="terminal-demo">
     <div class="sidebar-left">
-        <div class="sidebar-left__logo">Logo</div>
-        <div class="sidebar-left__table">Sidebar-left</div>
+        <div class="wrapper">
+            <div class="sidebar-left__logo">Logo</div>
+            <div class="sidebar-left__table">Sidebar-left</div>
+        </div>
+        <div class="bottom-left">Bottom-table</div>
     </div>
-    <div class="terminal-graphs">Terminal-graphs</div>
+    <div class="center">
+        <div class="wrapper">
+            <div class="center__logo">Control panel</div>
+            <div class="terminal-graphs__table">Terminal-graphs</div>
+        </div>
+        <div class="bottom-center">Bottom-table</div>
+    </div>
     <div class="sidebar-right">
-        <div class="sidebar-right__logo">Switch account</div>
-        <div class="sidebar-right__table">Sidebar-right</div>
+        <div class="wrapper">
+            <div class="sidebar-right__logo">Switch account</div>
+            <div class="sidebar-right__table">Sidebar-right</div>
+        </div>
+        <div class="bottom-right">Bottom-table</div>
     </div>
 </div>
-<div class="bottom-table">Bottom-table</div>
 </body>
 </html>
