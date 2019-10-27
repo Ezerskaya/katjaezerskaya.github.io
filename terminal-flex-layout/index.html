@@ -17,6 +17,8 @@
             outline: 3px solid #000000;
         }
 
+
+
         .terminal-demo {
             display: flex;
             justify-content: space-between;
@@ -31,6 +33,7 @@
         .sidebar-left {
             display: flex;
             flex-direction: column;
+            flex: 1;
         }
 
         .center {
@@ -42,6 +45,7 @@
         .sidebar-right {
             display: flex;
             flex-direction: column;
+            flex: 1;
         }
 
         .sidebar-left__logo {
@@ -61,20 +65,22 @@
 
         .sidebar-left__table {
             flex: 1;
-            padding: 2rem 5rem;
+            padding: 2rem 2rem;
             background-color: #995FA3;
+            overflow-y: scroll;
         }
 
         .terminal-graphs__table {
             flex: 1;
-            padding: 2rem 5rem;
+            padding: 2rem 2rem;
             background-color: #9A98B5;
         }
 
         .sidebar-right__table {
             flex: 1;
-            padding: 2rem 5rem;
+            padding: 2rem 2rem;
             background-color: #A5F8D3;
+            overflow-y: scroll;
         }
 
         .bottom-left {
@@ -94,6 +100,45 @@
             background-color: black;
             color: #ffffff;
         }
+
+        .text {
+            height: 10rem;
+            outline: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        ::-webkit-scrollbar-button {
+            width: 0px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e1e1e1;
+            border: 0px none #ffffff;
+            border-radius: 0px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-track {
+            background: #666666;
+            border: 0px none #ffffff;
+            border-radius: 47px;
+        }
+        ::-webkit-scrollbar-track:hover {
+            background: #666666;
+        }
+        ::-webkit-scrollbar-track:active {
+            background: #333333;
+        }
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
     </style>
 </head>
 <body>
@@ -101,7 +146,18 @@
     <div class="sidebar-left">
         <div class="wrapper">
             <div class="sidebar-left__logo">Logo</div>
-            <div class="sidebar-left__table">Sidebar-left</div>
+            <div class="sidebar-left__table">
+                <div class="text">Sidebar-left<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid, eius, laudantium? Accusamus aperiam asperiores aut blanditiis consequatur cumque deleniti,
+                facere incidunt ipsa minus neque non obcaecati officiis rem repellat reprehenderit vero. Accusantium
+                earum eligendi ipsam, maxime nisi ratione reprehenderit similique temporibus tenetur voluptatem?
+                Accusamus amet debitis enim porro recusandae similique tempora ullam, voluptates. Commodi consequuntur
+                corporis, dignissimos distinctio enim, ex hic laborum molestiae perspiciatis quibusdam suscipit,
+                voluptatibus! Adipisci aliquam, aperiam aut culpa delectus eos et exercitationem explicabo in inventore
+                iste itaque iusto magni maxime necessitatibus odit officiis perspiciatis, placeat quasi quia ratione
+                soluta, vitae voluptatum. Adipisci dolorum eius numquam quam?
+                </div>
+            </div>
         </div>
         <div class="bottom-left">Bottom-table</div>
     </div>
@@ -115,7 +171,13 @@
     <div class="sidebar-right">
         <div class="wrapper">
             <div class="sidebar-right__logo">Switch account</div>
-            <div class="sidebar-right__table">Sidebar-right</div>
+            <div class="sidebar-right__table">
+                <div class="text">Sidebar-right<br/>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Adipisci alias aliquam assumenda cupiditate dignissimos dolor enim ex expedita explicabo facilis
+                fuga impedit incidunt inventore ipsum laborum laudantium libero maxime nobis nostrum nulla omnis, optio
+                perspiciatis quisquam, ratione repudiandae soluta suscipit tempore totam vero voluptates. Cupiditate
+                iure nemo obcaecati odio veritatis!</div>
+            </div>
         </div>
         <div class="bottom-right">Bottom-table</div>
     </div>
