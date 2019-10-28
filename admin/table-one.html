@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Admin Control panel</title>
+</head>
+<body>
+<div class="admin-panel">
+    <section class="admin-panel__header container">
+        <div class="admin-panel__logo">
+            <a href="#">M.</a>
+            <form>
+                <input type="search" name="q" placeholder="Поиск по сайту">
+            </form>
+        </div>
+        <div class="admin-panel__link">
+            <a href="#">Overview</a>
+        </div>
+        <div class="admin-panel__settings">
+            <a href="#">Reports</a>
+        </div>
+        <div class="admin-panel__settings">
+            <a href="table-one.html">Users</a>
+        </div>
+        <div class="admin-panel__settings">
+            <a href="table-one.html">Settings</a>
+        </div>
+    </section>
+    <section class="admin-panel__main container">
+        <style>
+            table {
+                max-width: 100%;
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 17px;
+                color: #000000;
+                line-height: 1.6em;
+            }
+            tbody,
+            thead {
+                outline: 2px solid;
+            }
+            tr {
+                outline: 1px solid;
+                background-color: #FFFFFF;
+            }
+            tr:first-child {
+                font-size: 17px!important;
+            }
+            td {
+                outline: 1px solid;
+                padding: 10px 15px 11px!important;
+                text-align: center;
+            }
+            td:first-child {
+                text-align: left;
+            }
+            td, th {
+                font-weight: 500!important;
+                padding: 10px 25px;
+            }
+            th:first-child {
+                text-align: left;
+            }
+
+            @media screen and (max-width: 600px) {
+                table {
+                    border: 0;
+                }
+                table caption {
+                    font-size: 17px;
+                }
+                table thead {
+                    display: none;
+                }
+                table tr {
+                    border-bottom: 1px solid #ddd;
+                    display: block;
+                    margin-bottom: .625em;
+                }
+                table td {
+                    border-bottom: 1px solid #ddd;
+                    display: block;
+                    font-size: 17px;
+                    text-align: right;
+                }
+                table td:before {
+                    content: attr(aria-label);
+                    float: left;
+                }
+                table td:last-child {
+                    text-align: right!important;
+                    width: auto!important;
+                    border-bottom: 0;
+
+                }
+            }
+        </style>
+        <h2>認証レベルと要件</h2>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">要件</th>
+                <th scope="col">認証レベル０</th>
+                <th scope="col">認証レベル１</th>
+                <th scope="col">認証レベル２</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>メールアドレス</td>
+                <td aria-label="認証レベル０">&#10003;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">氏名</td>
+                <td aria-label="認証レベル０">&#10003;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">国籍</td>
+                <td aria-label="認証レベル０">&#183;</td>
+                <td aria-label="認証レベル１" >&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">身元の証明</td>
+                <td aria-label="認証レベル０">&#183;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">身分証明書を持って自撮り写真</td>
+                <td aria-label="認証レベル０">&#183;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">居住地の証明</td>
+                <td aria-label="認証レベル０">&#183;</td>
+                <td aria-label="認証レベル１">&#183;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h2>各認証レベルの制限</h2>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">機能</th>
+                <th scope="col">認証レベル０</th>
+                <th scope="col">認証レベル１</th>
+                <th scope="col">認証レベル２</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>トレーディング</td>
+                <td aria-label="認証レベル０">&#10003;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">入金</td>
+                <td aria-label="認証レベル０">制限なし</td>
+                <td aria-label="認証レベル１">制限なし</td>
+                <td aria-label="認証認証レベル２">制限なし</td>
+            </tr>
+            <tr>
+                <td scope="row">出金</td>
+                <td aria-label="認証レベル０">&#10003;</td>
+                <td aria-label="認証レベル１">&#10003;</td>
+                <td aria-label="認証認証レベル２">&#10003;</td>
+            </tr>
+            <tr>
+                <td scope="row">一日の出金制限</td>
+                <td aria-label="認証レベル０">10 000$</td>
+                <td aria-label="認証レベル１">50 000$</td>
+                <td aria-label="認証認証レベル２">1 000 000$</td>
+            </tr>
+        </table>
+
+    </section>
+</div>
+</body>
+</html>

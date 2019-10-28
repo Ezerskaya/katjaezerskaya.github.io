@@ -14,18 +14,22 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: red;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+form {
+    display: inline-block;
+}
+
 .container {
     display: flex;
     padding-left: 4rem;
     padding-right: 4rem;
 }
-
-/*.admin-panel__header {*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: flex-start;*/
-    /*outline: 1px solid black;*/
-/*}*/
 
 .admin-panel__header {
     display: grid;
@@ -35,7 +39,7 @@ a {
 
 @media (min-width: 768px) {
     .admin-panel__header {
-        grid-template-columns: 50fr 10fr 7fr 10fr;
+        grid-template-columns: 40fr 7fr 7fr 7fr 7fr;
     }
 }
 
@@ -63,25 +67,140 @@ a {
 .admin-panel__main {
     flex-direction: column;
     flex-wrap: wrap;
-
     box-sizing: border-box;
 }
 
-.admin-panel__bloks {
+.admin-panel__blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 3rem;
     margin: 1rem;
+    height: 50vh;
 }
 
 .admin-panel__block {
+    overflow-y: scroll;
 }
 
 .admin-panel__content {
+    display: flex;
+    justify-content: space-between;
     padding: 2rem;
     outline: 1px solid red;
 }
 
+/*Dropdown*/
+.dropbtn {
+    padding: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    border: 1px solid #000000;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    border: 1px solid #000000
+}
+
+/*table*/
+table {
+    max-width: 100%;
+    width: 50%;
+    border-collapse: collapse;
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.6em;
+}
+tbody,
+thead {
+    outline: 2px solid;
+}
+tr {
+    outline: 1px solid;
+    background-color: #FFFFFF;
+}
+tr:first-child {
+    font-size: 17px!important;
+}
+td {
+    outline: 1px solid;
+    padding: 10px 15px 11px!important;
+    text-align: center;
+}
+
+td, th {
+    font-weight: 500!important;
+    padding: 10px 25px;
+}
+th:first-child {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 17px;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 17px;
+        text-align: right;
+    }
+    table td:before {
+        content: attr(aria-label);
+        float: left;
+    }
+    table td:last-child {
+        text-align: right!important;
+        width: auto!important;
+        border-bottom: 0;
+
+    }
+}
 
 
