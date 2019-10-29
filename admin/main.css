@@ -173,6 +173,9 @@ td {
     border-right: 1px solid;
     text-align: center;
 }
+td:last-child {
+    border-right: none;
+}
 
 td, th {
     padding: .2rem .2rem;
