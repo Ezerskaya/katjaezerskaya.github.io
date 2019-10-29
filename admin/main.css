@@ -102,7 +102,7 @@ form {
 
 /*Dropdown*/
 .dropbtn {
-    margin: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
