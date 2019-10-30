@@ -5,7 +5,7 @@ body {
     background-color: #f6f5f5;
     color: #393939;
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 12px;
     min-height: 100vh;
 }
 
@@ -59,7 +59,7 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    background-color: #d3d3d3;
+    background-color: #ffffff;
 }
 
 .admin-panel__logo {
@@ -109,12 +109,14 @@ form {
 .admin-panel__block {
     overflow-y: scroll;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .admin-panel__title {
     display: block;
     position: sticky;
     top: 0;
+    padding: .5rem 0 0 .5rem;
     color: #000;
     font-weight: 600;
     background-color: #FFFFFF;
@@ -124,7 +126,7 @@ form {
 .admin-panel__content {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 .reports-panel__content {
@@ -213,7 +215,7 @@ tr:nth-child(even) {
 
 
 td {
-    border-right: 1px solid;
+    border-right: 1px solid #cfcfcf8f;
     text-align: center;
 }
 
@@ -298,7 +300,7 @@ td, th {
 
 .login-page__button {
     display: inline-block;
-    width: 100%;
+    width: 98%;
     font-family: 'Roboto Mono', monospace;
     outline: 1px solid;
     background-color: #77b6a287;
@@ -366,8 +368,8 @@ td, th {
     height: 1rem;
     padding: .3rem;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
-    border-color: #000;
+    font-size: .8rem;
+    border-color: #cfcfcf8f;
     border-style: solid;
     border-width: 1px;
     background-color: #fff;
@@ -377,5 +379,5 @@ td, th {
 
 .admin-panel__search:focus {
     outline: none;
-    border-color: #333;
+    border-color: #6a6a6a;
 }
