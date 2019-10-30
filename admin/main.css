@@ -386,3 +386,7 @@ td, th {
 .admin-panel__link-table {
     display: block;
 }
+
+.cell-time {
+    width: 25%;
+}
