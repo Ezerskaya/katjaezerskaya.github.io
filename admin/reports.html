@@ -19,26 +19,27 @@
         <div class="admin-panel__link">
             <a href="main.html">Overview</a>
         </div>
-        <div class="admin-panel__settings">
-            <a href="reports.html" style="color: red;">Reports</a>
+        <div class="admin-panel__link">
+            <a href="reports.html" style="color: #E07A5F;">Reports</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="users.html">Users</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="tickets.html">Tickets</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="withdrawal.html">Withdrawal</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="settings.html">Settings</a>
         </div>
     </section>
     <section class="admin-panel__main container">
         <div class="reports__blocks">
             <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>reports</span> > withdrawals</div>
+                <div class="admin-panel__title"><span style="color: #6a6a6a; border-bottom: none ">reports</span> >
+                    <span>withdrawals</span></div>
 
                 <div class="admin-panel__content">
                     <table>
@@ -49,52 +50,39 @@
                             <th scope="col" class="cell-time">time</th>
                         </tr>
                         </thead>
-                        <tr>
-                            <td aria-label="date">btc</td>
-                            <td aria-label="time">0.0002</td>
-                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="date">btc</td>
-                            <td aria-label="time">0.0002</td>
-                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="date">btc</td>
-                            <td aria-label="time">0.0002</td>
-                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="date">btc</td>
-                            <td aria-label="time">0.0002</td>
-                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="date">btc</td>
-                            <td aria-label="time">0.0002</td>
-                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
-                        </tr>
+                        <template data-x="44">
+                            <tr>
+                                <td aria-label="date">btc</td>
+                                <td aria-label="time">0.0002</td>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="date">btc</td>
+                                <td aria-label="time">0.0002</td>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                            </tr>
+                        </template>
                     </table>
                 </div>
             </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>choose</span></div>
                 <div class="reports-panel__content">
-                    date
-                    <form class="settings__time-and-date">
-                        <span class="settings__title">from</span><input type="date"/><br>
+                    <form class="reports-panel__settings-wrapper">
+                        <div class="reports-panel__setting"><span class="settings__title">from:</span><input type="date"  value="2019-10-29"/></div>
+                        <div class="reports-panel__setting"><span class="settings__title">to:</span><input type="date" value="2019-10-31"/></div>
                     </form>
-                    <from class="settings__time-and-date">
-                        <span class="settings__title">to</span><input type="date"/>
-                    </from>
+                    <div class="settings-lists">
                     <a href="#">P&L</a>
                     <a href="#">Deposits</a>
-                    <a href="#" style="color: #2711d9;">Withdrawals</a>
+                    <a href="#" style="color: #027bf5;">Withdrawals</a>
                     <a href="#">Registrations</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<script src="templates.js"></script>
 </body>
 </html>

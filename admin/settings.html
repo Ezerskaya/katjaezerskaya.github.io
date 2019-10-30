@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="templates.js">
     <title>Mark7 Dashboard</title>
 </head>
 <body>
@@ -19,20 +20,20 @@
         <div class="admin-panel__link">
             <a href="main.html">Overview</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="reports.html">Reports</a>
         </div>
-        <div class="admin-panel__settings">
-            <a href="users.html">Registrations</a>
+        <div class="admin-panel__link">
+            <a href="users.html">Users</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="table-one.html">Tickets</a>
         </div>
-        <div class="admin-panel__settings">
+        <div class="admin-panel__link">
             <a href="withdrawal.html">Withdrawal</a>
         </div>
-        <div class="admin-panel__settings">
-            <a href="settings.html" style="color: red;">Settings</a>
+        <div class="admin-panel__link">
+            <a href="settings.html" style="color: #E07A5F;">Settings</a>
         </div>
     </section>
     <section class="admin-panel__main container">
@@ -40,12 +41,15 @@
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>maintanance</span></div>
                 <div class="admin-panel__content">
-                    <span class="settings__title">Please enter the <span>time</span> and <span>date</span>:</span>
+                    <div class="settings__content ">
+                    <span class="settings__title"><span>time</span></span>
                     <form class="settings__time-and-date">
                         <input type="time"/>
-                        <input type="date"/>
+                       <span>date</span>:
+                        <input type="date" value="2019-10-31"/>
                         <input class="settings__button" type="submit" value="schedule maintanace"/>
                     </form>
+                    </div>
                     <table>
                         <thead>
                         <tr>
@@ -364,12 +368,11 @@
             </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>choose settings</span></div>
-                <div class="reports-panel__content">
+                <div class="settings-lists">
                     <a href="#">Maintanance</a>
                     <a href="#">Currencies</a>
                     <a href="#">Pairs</a>
                     <a href="#">KYC</a>
-
                 </div>
             </div>
         </div>
