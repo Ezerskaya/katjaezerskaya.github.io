@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Admin Control panel</title>
+    <title>Mark7 Dashboard</title>
 </head>
 <body>
 <div class="admin-panel">
@@ -23,7 +23,7 @@
             <a href="reports.html">Reports</a>
         </div>
         <div class="admin-panel__settings">
-            <a href="registrations.html">Registrations</a>
+            <a href="users.html">Users</a>
         </div>
         <div class="admin-panel__settings">
             <a href="tickets.html">Tickets</a>
@@ -40,28 +40,30 @@
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>system accounts</span></div>
                 <div class="admin-panel__content">
-                    <div class="tickets-page__add-new">
-                        <div class="dropdown">
-                        <button class="dropbtn">Issuer</button>
-                        <div class="dropdown-content">
-                            <a href="#">Issuer</a>
-                            <a href="#">Beneficiary</a>
-                            <a href="#">Custodian</a>
-                        </div>
-                    </div>
-                    </div>
                     <table>
                         <thead>
                         <tr>
+                            <th class="dropdown" style="background-color: #77b6a287;">
+                                <!--<div class="dropdown">-->
+                                    <button class="dropbtn">account name</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Issuer</a>
+                                        <a href="#">Beneficiary</a>
+                                        <a href="#">Custodian</a>
+                                    </div>
+                                <!--</div>-->
+                            </th>
                             <th scope="col">currency</th>
                             <th scope="col">balance</th>
                         </tr>
                         </thead>
                         <tr>
+                            <td></td>
                             <td aria-label="currency">btc</td>
                             <td aria-label="balance">20</td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td aria-label="currency">etc</td>
                             <td aria-label="balance">30</td>
                         </tr>
@@ -393,25 +395,35 @@
                     <table>
                         <thead>
                         <tr>
+                            <th scope="col">date</th>
+                            <th scope="col">time</th>
                             <th scope="col">service</th>
                             <th scope="col">status</th>
                         </tr>
                         </thead>
                         <tr>
+                            <td aria-label="date">2019-12-12</td>
+                            <td aria-label="time">12:33</td>
                             <td aria-label="service">matching</td>
                             <td aria-label="status">ok</td>
                         </tr>
                         <tr>
+                            <td aria-label="date">2019-12-12</td>
+                            <td aria-label="time">12:32</td>
                             <td aria-label="service">exchange</td>
-                            <td aria-label="status">30</td>
+                            <td aria-label="status">ok</td>
                         </tr>
                         <tr>
-                            <td aria-label="service" style="background-color: #ff000073">authentication</td>
-                            <td aria-label="status" style="background-color: #ff000073">offline</td>
-                        </tr>
-                        <tr>
+                            <td aria-label="date">2019-12-12</td>
+                            <td aria-label="time">12:31</td>
                             <td aria-label="service">candles</td>
                             <td aria-label="status">ok</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="date" style="background-color: #cc000024">2019-12-12</td>
+                            <td aria-label="time" style="background-color: #cc000024">12:30</td>
+                            <td aria-label="service" style="background-color: #cc000024">authentication</td>
+                            <td aria-label="status" style="background-color: #cc000024">offline</td>
                         </tr>
                     </table>
                 </div>
@@ -422,6 +434,7 @@
                     <table>
                         <thead>
                         <tr>
+                            <th scope="col">date</th>
                             <th scope="col">time</th>
                             <th scope="col">component</th>
                             <th scope="col">level</th>
@@ -429,18 +442,21 @@
                         </tr>
                         </thead>
                         <tr>
-                            <td aria-label="time"style="background-color: #ffff004d">12:32</td>
-                            <td aria-label="component"style="background-color: #ffff004d"> authentication</td>
-                            <td aria-label="level"style="background-color: #ffff004d">warning</td>
-                            <td aria-label="message"style="background-color: #ffff004d">service restarted</td>
+                            <td aria-label="date" style="background-color: #ffff004d">2019-12-12</td>
+                            <td aria-label="time" style="background-color: #ffff004d">12:32</td>
+                            <td aria-label="component" style="background-color: #ffff004d"> authentication</td>
+                            <td aria-label="level" style="background-color: #ffff004d">warning</td>
+                            <td aria-label="message" style="background-color: #ffff004d">service restarted</td>
                         </tr>
                         <tr>
-                            <td aria-label="time" style="background-color: #ff000073">12:31</td>
-                            <td aria-label="component" style="background-color: #ff000073">authentication</td>
-                            <td aria-label="level" style="background-color: #ff000073">error</td>
-                            <td aria-label="message" style="background-color: #ff000073">low disk space</td>
+                            <td aria-label="date" style="background-color: #cc000024">2019-12-12</td>
+                            <td aria-label="time" style="background-color: #cc000024">12:31</td>
+                            <td aria-label="component" style="background-color: #cc000024">authentication</td>
+                            <td aria-label="level" style="background-color: #cc000024">error</td>
+                            <td aria-label="message" style="background-color: #cc000024">low disk space</td>
                         </tr>
                         <tr>
+                            <td aria-label="date">2019-12-12</td>
                             <td aria-label="time">12:30</td>
                             <td aria-label="component">matching</td>
                             <td aria-label="level">message</td>
