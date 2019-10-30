@@ -131,16 +131,15 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 /*Dropdown*/
 .dropbtn {
     margin-bottom: 1rem;
-    padding: 1rem;
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
-    border: 1px solid #000000;
+    border: none;
     background-color: #77b6a287;
     cursor: pointer;
     z-index: 1;
@@ -154,11 +153,12 @@ form {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+    right: 0;
     display: none;
     position: absolute;
     background-color: #FFFFFF;
     min-width: 160px;
-    border: 1px solid #000000;
+    border: 1px solid #6a6a6a;
     z-index: 1;
 }
 
@@ -172,7 +172,7 @@ form {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
@@ -182,7 +182,7 @@ form {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    border: 1px solid #000000
+    border: none;
 }
 
 /*table*/
@@ -353,11 +353,6 @@ td, th {
     display: flex;
     justify-content: flex-end;
     text-align: end;
-}
-
-.tickets-page__add-new a {
-    padding: 1rem;
-    border: 1px solid;
 }
 
 .reports-page__title {

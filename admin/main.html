@@ -17,7 +17,7 @@
             </form>
         </div>
         <div class="admin-panel__link">
-            <a href="main.html">Overview</a>
+            <a href="main.html" style="color: red;">Overview</a>
         </div>
         <div class="admin-panel__settings">
             <a href="reports.html">Reports</a>
@@ -29,17 +29,45 @@
             <a href="tickets.html">Tickets</a>
         </div>
         <div class="admin-panel__settings">
-            <a href="withdrawal.html" style="color: red;">Withdrawal</a>
+            <a href="withdrawal.html">Withdrawal</a>
         </div>
         <div class="admin-panel__settings">
             <a href="settings.html">Settings</a>
         </div>
     </section>
-
-
-
     <section class="admin-panel__main container">
-        <div class="settings__blocks">
+        <div class="admin-panel__blocks">
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>system accounts</span></div>
+                <div class="admin-panel__content">
+                    <div class="tickets-page__add-new">
+                        <div class="dropdown">
+                        <button class="dropbtn">Issuer</button>
+                        <div class="dropdown-content">
+                            <a href="#">Issuer</a>
+                            <a href="#">Beneficiary</a>
+                            <a href="#">Custodian</a>
+                        </div>
+                    </div>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">currency</th>
+                            <th scope="col">balance</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="currency">btc</td>
+                            <td aria-label="balance">20</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="currency">etc</td>
+                            <td aria-label="balance">30</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>withdrawal</span></div>
                 <div class="admin-panel__content">
@@ -353,6 +381,70 @@
                             <td aria-label="currency">btc</td>
                             <td aria-label="amount">0.00002</td>
                             <td aria-label="action">approve</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="admin-panel__blocks">
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>health check</span></div>
+                <div class="admin-panel__content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">service</th>
+                            <th scope="col">status</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="service">matching</td>
+                            <td aria-label="status">ok</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="service">exchange</td>
+                            <td aria-label="status">30</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="service" style="background-color: #ff000073">authentication</td>
+                            <td aria-label="status" style="background-color: #ff000073">offline</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="service">candles</td>
+                            <td aria-label="status">ok</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>logs</span></div>
+                <div class="admin-panel__content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">time</th>
+                            <th scope="col">component</th>
+                            <th scope="col">level</th>
+                            <th scope="col">message</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="time"style="background-color: #ffff004d">12:32</td>
+                            <td aria-label="component"style="background-color: #ffff004d"> authentication</td>
+                            <td aria-label="level"style="background-color: #ffff004d">warning</td>
+                            <td aria-label="message"style="background-color: #ffff004d">service restarted</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="time" style="background-color: #ff000073">12:31</td>
+                            <td aria-label="component" style="background-color: #ff000073">authentication</td>
+                            <td aria-label="level" style="background-color: #ff000073">error</td>
+                            <td aria-label="message" style="background-color: #ff000073">low disk space</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="time">12:30</td>
+                            <td aria-label="component">matching</td>
+                            <td aria-label="level">message</td>
+                            <td aria-label="message">orderbook is empty</td>
                         </tr>
                     </table>
                 </div>
