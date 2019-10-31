@@ -446,4 +446,11 @@ input[type="date" i]:focus {
     color: #027bf5;;
 }
 
-
+.page-in-work {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 8rem 0;
+    font-size: 1rem;
+    color: #bebebe;
+}
