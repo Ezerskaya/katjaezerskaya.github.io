@@ -39,14 +39,41 @@
         <div class="settings__blocks">
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span style="color: #6a6a6a; border-bottom: none ">reports</span> >
-                    <span>registrations</span>
+                    <span>deposits</span>
                 </div>
                 <div class="admin-panel__content">
-                    <div class="page-in-work">page in work \(o_o)/</div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="cell-little">created</th>
+                            <th scope="col">transaction id</th>
+                            <th scope="col">amount</th>
+                            <th scope="col">currency</th>
+                            <th scope="col">status</th>
+                        </tr>
+                        </thead>
+                        <template data-x="44">
+                            <tr>
+                                <td aria-label="created" class="cell-little">2019-12-12&nbsp;12:33</td>
+                                <td aria-label="transaction id">8783</td>
+                                <td aria-label="amount">1000</td>
+                                <td aria-label="currency">eth</td>
+                                <td aria-label="status">filled</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="created" class="cell-little">2019-12-12&nbsp;12:33</td>
+                                <td aria-label="transaction id">8783</td>
+                                <td aria-label="amount">1000</td>
+                                <td aria-label="currency">eth</td>
+                                <td aria-label="status">canceled</td>
+                            </tr>
+                        </template>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<script src="templates.js"></script>
 </body>
 </html>
