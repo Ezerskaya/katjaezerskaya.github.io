@@ -93,6 +93,14 @@ form {
     height: 85vh;
 }
 
+.withdrawal-review__blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+    height: 50vh;
+}
+
 .reports__blocks {
     display: grid;
     grid-template-columns: 40fr 10fr;
@@ -118,6 +126,10 @@ form {
 }
 
 .admin-panel__wrapper .settings__button {
+    background-color: #e07a5f9e;
+}
+
+.admin-panel__wrapper .settings__button:hover, admin-panel__wrapper .settings__button:active, .settings__button:focus {
     background-color: #e07a5f9e;
 }
 

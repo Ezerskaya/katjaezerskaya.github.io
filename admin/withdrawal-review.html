@@ -43,49 +43,185 @@
             <button class="settings__button">&#9760; block users &#9760;</button>
 
         </div>
-        <div class="admin-panel__blocks">
+        <div class="withdrawal-review__blocks">
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>requests</span></div>
                 <div class="admin-panel__content">
-
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">time</th>
+                            <th scope="col"> + deposits</th>
+                            <th scope="col" class="cell-time">currency</th>
+                            <th scope="col" class="cell-time">status</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="time">2019-12-12 12:32</td>
+                            <td aria-label="email">1000</td>
+                            <td aria-label="email">btc</td>
+                            <td aria-label="amount" class="cell-time">in progress</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>deposit</span></div>
                 <div class="admin-panel__content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">time</th>
+                            <th scope="col"> + deposits</th>
+                            <th scope="col" class="cell-time">currency</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="time">2019-12-12 12:32</td>
+                            <td aria-label="email">1000</td>
+                            <td aria-label="email">btc</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>history</span></div>
                 <div class="admin-panel__content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">time</th>
+                            <th scope="col"> + deposits</th>
+                            <th scope="col"> - withdrawal</th>
+                            <th scope="col" class="cell-time">currency</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td aria-label="time">2019-12-12 12:32</td>
+                            <td aria-label="email">1000</td>
+                            <td aria-label="currency">1000</td>
+                            <td aria-label="amount" class="cell-time">btc</td>
+
+                        </tr>
+                        <tr>
+                            <td aria-label="time">2019-11-01 11:11</td>
+                            <td aria-label="email">500</td>
+                            <td aria-label="currency">500</td>
+                            <td aria-label="amount" class="cell-time">btc</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="admin-panel__blocks">
-            <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>balances</span></div>
-                <div class="admin-panel__content">
+            <div class="withdrawal-review__blocks">
+                <div class="admin-panel__block">
+                    <div class="admin-panel__title"><span>balances</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col" class="cell-time">time</th>
+                                <th scope="col">currency</th>
+                                <th scope="col">total balance</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                                <td aria-label="email">btc</td>
+                                <td aria-label="amount">0.00002</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                                <td aria-label="currency">eth</td>
+                                <td aria-label="amount">1000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="admin-panel__block">
+                    <div class="admin-panel__title"><span>open orders</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col">time</th>
+                                <th scope="col"> + deposits</th>
+                                <th scope="col"> - withdrawal</th>
+                                <th scope="col" class="cell-time">pair</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td aria-label="time">2019-12-12 12:32</td>
+                                <td aria-label="email">1000</td>
+                                <td aria-label="currency">0</td>
+                                <td aria-label="amount" class="cell-time">btc/eth</td>
+
+                            </tr>
+                            <tr>
+                                <td aria-label="time">2019-11-01 11:11</td>
+                                <td aria-label="email">0</td>
+                                <td aria-label="currency">500</td>
+                                <td aria-label="amount" class="cell-time">eth/btc</td>
+                            </tr>
+                        </table>
+                        </table>
+                    </div>
+                </div>
+                <div class="admin-panel__block">
+                    <div class="admin-panel__title"><span>order history</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col">time</th>
+                                <th scope="col"> + deposits</th>
+                                <th scope="col"> - withdrawal</th>
+                                <th scope="col" class="cell-time">pair</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td aria-label="time">2019-12-12 12:32</td>
+                                <td aria-label="email">0</td>
+                                <td aria-label="currency">1000</td>
+                                <td aria-label="amount" class="cell-time">btc/eth</td>
+
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>open orders</span></div>
-                <div class="admin-panel__content">
+            <div class="withdrawal-review__blocks">
+                <div class="admin-panel__block">
+                    <div class="admin-panel__title"><span>tickets</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col">time</th>
+                                <th scope="col">assign</th>
+                                <th scope="col">subjects</th>
+                                <th scope="col">status</th>
+
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                                <td aria-label="assign">Artyom Sabura</td>
+                                <td aria-label="subjects">withdrawal issue</td>
+                                <td aria-label="status" class="cell-time">in progress</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                                <td aria-label="assign">Layli Burieva</td>
+                                <td aria-label="subjects">The buy/sell button does not work</td>
+                                <td aria-label="status" class="cell-time">done</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>order history</span></div>
-                <div class="admin-panel__content">
-                </div>
-            </div>
-        </div>
-        <div class="admin-panel__blocks">
-            <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>tickets</span></div>
-                <div class="admin-panel__content">
-                </div>
-            </div>
-        </div>
     </section>
 </div>
+<script src="templates.js"></script>
 </body>
 </html>
