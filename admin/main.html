@@ -38,36 +38,9 @@
     <section class="admin-panel__main container">
         <div class="admin-panel__blocks">
             <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>system accounts</span></div>
+                <div class="admin-panel__title"><span>kyc request</span></div>
                 <div class="admin-panel__content">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th scope="col" class="dropdown">
-                               issuer <b class="drop-down__arrow"></b>
-                                <div class="dropdown-content">
-                                    <a href="#">issuer</a>
-                                    <a href="#">beneficiary</a>
-                                    <a href="#">custodian</a>
-                                </div>
-                            </th>
-                            <th scope="col">currency</th>
-                            <th scope="col">balance</th>
-                        </tr>
-                        </thead>
-                        <template data-x="7">
-                        <tr>
-                            <td aria-label="issuer">issuer</td>
-                            <td aria-label="currency">btc</td>
-                            <td aria-label="balance">20</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="issuer">issuer</td>
-                            <td aria-label="currency">etc</td>
-                            <td aria-label="balance">30</td>
-                        </tr>
-                        </template>
-                    </table>
+
                 </div>
             </div>
             <div class="admin-panel__block">
@@ -179,6 +152,41 @@
                             <td aria-label="level">message</td>
                             <td aria-label="message">orderbook is empty</td>
                         </tr>
+                        </template>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="admin-panel__blocks">
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>system accounts</span></div>
+                <div class="admin-panel__content">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col" class="dropdown">
+                                issuer <b class="drop-down__arrow"></b>
+                                <div class="dropdown-content">
+                                    <a href="#">issuer</a>
+                                    <a href="#">beneficiary</a>
+                                    <a href="#">custodian</a>
+                                </div>
+                            </th>
+                            <th scope="col">currency</th>
+                            <th scope="col">balance</th>
+                        </tr>
+                        </thead>
+                        <template data-x="7">
+                            <tr>
+                                <td aria-label="issuer">issuer</td>
+                                <td aria-label="currency">btc</td>
+                                <td aria-label="balance">20</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="issuer">issuer</td>
+                                <td aria-label="currency">etc</td>
+                                <td aria-label="balance">30</td>
+                            </tr>
                         </template>
                     </table>
                 </div>
