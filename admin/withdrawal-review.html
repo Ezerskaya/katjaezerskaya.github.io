@@ -88,23 +88,20 @@
                     <table>
                         <thead>
                         <tr>
-                            <th scope="col">time</th>
-                            <th scope="col"> + deposits</th>
-                            <th scope="col"> - withdrawal</th>
+                            <th scope="col" class="cell-time">time</th>
+                            <th scope="col">value</th>
                             <th scope="col" class="cell-time">currency</th>
                         </tr>
                         </thead>
                         <tr>
-                            <td aria-label="time">2019-12-12 12:32</td>
-                            <td aria-label="email">1000</td>
-                            <td aria-label="currency">1000</td>
+                            <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
+                            <td aria-label="value">- 1000</td>
                             <td aria-label="amount" class="cell-time">btc</td>
 
                         </tr>
                         <tr>
-                            <td aria-label="time">2019-11-01 11:11</td>
-                            <td aria-label="email">500</td>
-                            <td aria-label="currency">500</td>
+                            <td aria-label="time" class="cell-time">2019-11-01 11:11</td>
+                            <td aria-label="value">+ 500</td>
                             <td aria-label="amount" class="cell-time">btc</td>
                         </tr>
                     </table>
@@ -118,18 +115,15 @@
                         <table>
                             <thead>
                             <tr>
-                                <th scope="col" class="cell-time">time</th>
                                 <th scope="col">currency</th>
                                 <th scope="col">total balance</th>
                             </tr>
                             </thead>
                             <tr>
-                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
                                 <td aria-label="email">btc</td>
                                 <td aria-label="amount">0.00002</td>
                             </tr>
                             <tr>
-                                <td aria-label="time" class="cell-time">2019-12-12 12:32</td>
                                 <td aria-label="currency">eth</td>
                                 <td aria-label="amount">1000</td>
                             </tr>
@@ -143,25 +137,29 @@
                             <thead>
                             <tr>
                                 <th scope="col">time</th>
-                                <th scope="col"> + deposits</th>
-                                <th scope="col"> - withdrawal</th>
-                                <th scope="col" class="cell-time">pair</th>
+                                <th scope="col" class="cell-time">pairs</th>
+                                <th scope="col" class="cell-time">side</th>
+                                <th scope="col" class="cell-time">price</th>
+                                <th scope="col" class="cell-time">amount</th>
+                                <th scope="col" class="cell-time">filled</th>
                             </tr>
                             </thead>
                             <tr>
                                 <td aria-label="time">2019-12-12 12:32</td>
-                                <td aria-label="email">1000</td>
-                                <td aria-label="currency">0</td>
-                                <td aria-label="amount" class="cell-time">btc/eth</td>
-
+                                <td aria-label="pairs">BTT/USDT</td>
+                                <td aria-label="side" style="color:red">sell</td>
+                                <td aria-label="price">0.0007650</td>
+                                <td aria-label="amount">15,977.00000000</td>
+                                <td aria-label="filled">0</td>
                             </tr>
                             <tr>
-                                <td aria-label="time">2019-11-01 11:11</td>
-                                <td aria-label="email">0</td>
-                                <td aria-label="currency">500</td>
-                                <td aria-label="amount" class="cell-time">eth/btc</td>
+                                <td aria-label="time">2019-01-12 11:32</td>
+                                <td aria-label="pairs">ETH/USDT</td>
+                                <td aria-label="side" style="color:green">buy</td>
+                                <td aria-label="price">170</td>
+                                <td aria-label="amount">0.08599</td>
+                                <td aria-label="filled">0</td>
                             </tr>
-                        </table>
                         </table>
                     </div>
                 </div>
@@ -172,17 +170,28 @@
                             <thead>
                             <tr>
                                 <th scope="col">time</th>
-                                <th scope="col"> + deposits</th>
-                                <th scope="col"> - withdrawal</th>
-                                <th scope="col" class="cell-time">pair</th>
+                                <th scope="col" class="cell-time">pairs</th>
+                                <th scope="col" class="cell-time">side</th>
+                                <th scope="col" class="cell-time">price</th>
+                                <th scope="col" class="cell-time">amount</th>
+                                <th scope="col" class="cell-time">status</th>
                             </tr>
                             </thead>
                             <tr>
                                 <td aria-label="time">2019-12-12 12:32</td>
-                                <td aria-label="email">0</td>
-                                <td aria-label="currency">1000</td>
-                                <td aria-label="amount" class="cell-time">btc/eth</td>
-
+                                <td aria-label="pairs">BTT/USDT</td>
+                                <td aria-label="side" style="color:red">sell</td>
+                                <td aria-label="price">0.0007650</td>
+                                <td aria-label="amount">15,977.00000000</td>
+                                <td aria-label="status">filled</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time">2019-01-12 11:32</td>
+                                <td aria-label="pairs">ETH/USDT</td>
+                                <td aria-label="side" style="color:green">buy</td>
+                                <td aria-label="price">170</td>
+                                <td aria-label="amount">0.08599</td>
+                                <td aria-label="status">canceled</td>
                             </tr>
                         </table>
                     </div>
