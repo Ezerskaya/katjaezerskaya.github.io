@@ -106,6 +106,21 @@ form {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
+.admin-panel__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    background: none;
+}
+
+.admin-panel__wrapper .admin-panel__title {
+    background: none;
+}
+
+.admin-panel__wrapper .settings__button {
+    background-color: #e07a5f9e;
+}
+
 .admin-panel__title {
     display: block;
     position: sticky;
