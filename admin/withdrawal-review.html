@@ -132,22 +132,34 @@
         </div>
         <div class="admin-panel__blocks">
             <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>balances</span></div>
+                <div class="admin-panel__title"><span>order history</span></div>
                 <div class="admin-panel__content">
                     <table>
                         <thead>
                         <tr>
-                            <th scope="col">currency</th>
-                            <th scope="col">total balance</th>
+                            <th scope="col" class="cell-little">time</th>
+                            <th scope="col" class="cell-little">pairs</th>
+                            <th scope="col" class="cell-little">side</th>
+                            <th scope="col" class="cell-little">price</th>
+                            <th scope="col" class="cell-little">amount</th>
+                            <th scope="col" class="cell-little">status</th>
                         </tr>
                         </thead>
                         <tr>
-                            <td aria-label="email">btc</td>
-                            <td aria-label="amount">0.00002</td>
+                            <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
+                            <td aria-label="pairs">BTT/USDT</td>
+                            <td aria-label="side" style="color:red">sell</td>
+                            <td aria-label="price">0.0007650</td>
+                            <td aria-label="amount">15,977.00000000</td>
+                            <td aria-label="status">filled</td>
                         </tr>
                         <tr>
-                            <td aria-label="currency">eth</td>
-                            <td aria-label="amount">1000</td>
+                            <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
+                            <td aria-label="pairs">ETH/USDT</td>
+                            <td aria-label="side" style="color:green">buy</td>
+                            <td aria-label="price">170</td>
+                            <td aria-label="amount">0.08599</td>
+                            <td aria-label="status">canceled</td>
                         </tr>
                     </table>
                 </div>
@@ -204,39 +216,7 @@
             </div>
         </div>
         <div class="admin-panel__blocks">
-            <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>order history</span></div>
-                <div class="admin-panel__content">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th scope="col" class="cell-little">time</th>
-                            <th scope="col" class="cell-little">pairs</th>
-                            <th scope="col" class="cell-little">side</th>
-                            <th scope="col" class="cell-little">price</th>
-                            <th scope="col" class="cell-little">amount</th>
-                            <th scope="col" class="cell-little">status</th>
-                        </tr>
-                        </thead>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
-                            <td aria-label="pairs">BTT/USDT</td>
-                            <td aria-label="side" style="color:red">sell</td>
-                            <td aria-label="price">0.0007650</td>
-                            <td aria-label="amount">15,977.00000000</td>
-                            <td aria-label="status">filled</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
-                            <td aria-label="pairs">ETH/USDT</td>
-                            <td aria-label="side" style="color:green">buy</td>
-                            <td aria-label="price">170</td>
-                            <td aria-label="amount">0.08599</td>
-                            <td aria-label="status">canceled</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>tickets</span></div>
                 <div class="admin-panel__content">
