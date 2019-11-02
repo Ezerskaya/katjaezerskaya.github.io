@@ -36,7 +36,7 @@
         </div>
     </section>
     <section class="admin-panel__main container">
-        <div class="settings__blocks">
+        <div class="reports__blocks">
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span style="color: #6a6a6a; border-bottom: none ">reports</span> >
                     <span>deposits</span>
@@ -83,20 +83,31 @@
                                 <td aria-label="status">pending</td>
                                 <td aria-label="transaction hash/deposit wallet"></td>
                             </tr>
-                            <tr>
-                                <td aria-label="created">2019-10-12&nbsp;10:03</td>
-                                <td aria-label="transaction id">8783</td>
-                                <td aria-label="account id">45454</td>
-                                <td aria-label="email">ezersk@gmail.com</td>
-                                <td aria-label="currency">btc</td>
-                                <td aria-label="amount">1</td>
-                                <td aria-label="fee">0.001</td>
-                                <td aria-label="final amount">0.001</td>
-                                <td aria-label="status">fail</td>
-                                <td aria-label="transaction hash/deposit wallet"></td>
-                            </tr>
                         </template>
                     </table>
+                </div>
+            </div>
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>choose</span></div>
+                <div class="reports-panel__content">
+                    <form class="reports-panel__settings-wrapper">
+                        <div class="reports-panel__setting"><span class="settings__title">from:</span><input type="date"
+                                                                                                             value="2019-10-29"/>
+                        </div>
+                        <div class="reports-panel__setting"><span class="settings__title">to:</span><input type="date"
+                                                                                                           value="2019-10-31"/>
+                        </div>
+                    </form>
+                    <div class="settings-lists">
+                        <a href="p-and-l.html">P&L</a>
+                        <a href="payouts.html">Payouts</a>
+                        <a href="deposits.html" style="color: #027bf5;">Deposits</a>
+                        <a href="deposit-wallets.html">Deposit Wallets</a>
+                        <a href="withdrawals.html">Withdrawals</a>
+                        <a href="account-balances.html">Account Balances</a>
+                        <a href="order-history.html">Order History</a>
+                        <a href="registrations.html">Registrations</a>
+                    </div>
                 </div>
             </div>
         </div>

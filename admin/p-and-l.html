@@ -36,13 +36,65 @@
         </div>
     </section>
     <section class="admin-panel__main container">
-        <div class="settings__blocks">
+        <div class="reports__blocks">
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span style="color: #6a6a6a; border-bottom: none ">reports</span> >
                     <span>p&l</span>
                 </div>
                 <div class="admin-panel__content">
-                    <div class="page-in-work">page in work \(o_o)/</div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th scope="col">time</th>
+                            <th scope="col">token</th>
+                            <th scope="col">fee</th>
+                            <th scope="col">deposit</th>
+                            <th scope="col">withdrawal</th>
+                            <th scope="col">balance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td aria-label="time">2019-12-01 00:00</td>
+                                <td aria-label="token">btc</td>
+                                <td aria-label="fee">0</td>
+                                <td aria-label="deposits">0</td>
+                                <td aria-label="withdrawals">0</td>
+                                <td aria-label="balances">0</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time">2019-11-01 00:00</td>
+                                <td aria-label="token">eth</td>
+                                <td aria-label="fee">0</td>
+                                <td aria-label="deposit">0</td>
+                                <td aria-label="withdrawal">0</td>
+                                <td aria-label="balance">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>choose</span></div>
+                <div class="reports-panel__content">
+                    <form class="reports-panel__settings-wrapper">
+                        <div class="reports-panel__setting"><span class="settings__title">from:</span><input type="date"
+                                                                                                             value="2019-10-29"/>
+                        </div>
+                        <div class="reports-panel__setting"><span class="settings__title">to:</span><input type="date"
+                                                                                                           value="2019-10-31"/>
+                        </div>
+                    </form>
+                    <div class="settings-lists">
+                        <a href="p-and-l.html" style="color: #027bf5;">P&L</a>
+                        <a href="payouts.html">Payouts</a>
+                        <a href="deposits.html">Deposits</a>
+                        <a href="deposit-wallets.html">Deposit Wallets</a>
+                        <a href="withdrawals.html">Withdrawals</a>
+                        <a href="account-balances.html">Account Balances</a>
+                        <a href="order-history.html">Order History</a>
+                        <a href="registrations.html">Registrations</a>
+                    </div>
                 </div>
             </div>
         </div>

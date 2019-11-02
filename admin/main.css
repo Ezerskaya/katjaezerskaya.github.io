@@ -103,8 +103,8 @@ form {
 
 .reports__blocks {
     display: grid;
-    grid-template-columns: 40fr 10fr;
-    grid-gap: 3rem;
+    grid-template-columns: 50fr 13fr;
+    grid-gap: 1rem;
     height: 85vh;
 }
 

@@ -36,7 +36,7 @@
         </div>
     </section>
     <section class="admin-panel__main container">
-        <div class="settings__blocks">
+        <div class="reports__blocks">
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span style="color: #6a6a6a; border-bottom: none ">reports</span> >
                     <span>payouts</span>
@@ -54,27 +54,50 @@
                             <th scope="col">status</th>
                         </tr>
                         </thead>
-                        <template data-x="44">
-                            <tr>
-                                <td aria-label="created" class="cell-little">2019-12-12&nbsp;12:33</td>
-                                <td aria-label="transaction id">8783</td>
-                                <td aria-label="amount">1000</td>
-                                <td aria-label="currency">eth</td>
-                                <td aria-label="fee">0.0001</td>
-                                <td aria-label="processed">in process</td>
-                                <td aria-label="status">active</td>
-                            </tr>
-                            <tr>
-                                <td aria-label="created" class="cell-little">2019-12-12&nbsp;12:33</td>
-                                <td aria-label="transaction id">8783</td>
-                                <td aria-label="amount">1000</td>
-                                <td aria-label="currency">eth</td>
-                                <td aria-label="fee">0.0001</td>
-                                <td aria-label="processed">confirmed</td>
-                                <td aria-label="status">done</td>
-                            </tr>
-                        </template>
+                        <tbody>
+                        <tr>
+                            <td aria-label="created" class="cell-little">2019-12-12 12:33</td>
+                            <td aria-label="transaction id">8783</td>
+                            <td aria-label="amount">1000</td>
+                            <td aria-label="currency">eth</td>
+                            <td aria-label="fee">0.0001</td>
+                            <td aria-label="processed">in process</td>
+                            <td aria-label="status">active</td>
+                        </tr>
+                        <tr>
+                            <td aria-label="created" class="cell-little">2019-12-12 12:33</td>
+                            <td aria-label="transaction id">8784</td>
+                            <td aria-label="amount">1000</td>
+                            <td aria-label="currency">eth</td>
+                            <td aria-label="fee">0.0001</td>
+                            <td aria-label="processed">confirmed</td>
+                            <td aria-label="status">done</td>
+                        </tr>
+                        </tbody>
                     </table>
+                </div>
+            </div>
+            <div class="admin-panel__block">
+                <div class="admin-panel__title"><span>choose</span></div>
+                <div class="reports-panel__content">
+                    <form class="reports-panel__settings-wrapper">
+                        <div class="reports-panel__setting"><span class="settings__title">from:</span><input type="date"
+                                                                                                             value="2019-10-29"/>
+                        </div>
+                        <div class="reports-panel__setting"><span class="settings__title">to:</span><input type="date"
+                                                                                                           value="2019-10-31"/>
+                        </div>
+                    </form>
+                    <div class="settings-lists">
+                        <a href="p-and-l.html">P&L</a>
+                        <a href="payouts.html" style="color: #027bf5;">Payouts</a>
+                        <a href="deposits.html">Deposits</a>
+                        <a href="deposit-wallets.html">Deposit Wallets</a>
+                        <a href="withdrawals.html">Withdrawals</a>
+                        <a href="account-balances.html">Account Balances</a>
+                        <a href="order-history.html">Order History</a>
+                        <a href="registrations.html">Registrations</a>
+                    </div>
                 </div>
             </div>
         </div>
