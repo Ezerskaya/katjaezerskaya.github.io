@@ -5,7 +5,7 @@ body {
     background-color: #f6f5f5;
     color: #393939;
     font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
+    font-size: 11px;
     min-height: 100vh;
 }
 
@@ -80,7 +80,7 @@ form {
 .admin-panel__blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     margin: 1rem;
     height: 50vh;
 }
@@ -103,13 +103,14 @@ form {
 
 .reports__blocks {
     display: grid;
-    grid-template-columns: 50fr 13fr;
+    grid-template-columns: 50fr 10fr;
     grid-gap: 1rem;
     height: 85vh;
 }
 
 .admin-panel__block {
     overflow-y: scroll;
+    overflow-x: scroll;
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
@@ -154,7 +155,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem .5rem;
+    padding: 1rem .2rem;
 }
 
 .reports-panel__content a {
@@ -197,7 +198,8 @@ form {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 13rem;
+    width: 100%;
+    min-width: 10rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     z-index: 1;
 }
@@ -210,7 +212,7 @@ form {
 }
 
 .dropdown-content a:hover {
-    background-color: #f2f2f2;
+    background-color: #e1e1e1;;
 }
 
 .dropdown:hover .dropdown-content {
@@ -228,6 +230,7 @@ table {
     border-collapse: collapse;
     font-size: .8rem;
     letter-spacing: -1px;
+    white-space: nowrap
 }
 
 thead {
@@ -253,7 +256,7 @@ td:last-child {
 }
 
 td, th {
-    padding: .2rem .2rem;
+    padding: .5rem .5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -347,7 +350,7 @@ td, th {
 }
 
 .cell-little {
-    width: 30%;
+    width: 20%;
 }
 
 /*Form*/

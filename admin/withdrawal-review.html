@@ -29,7 +29,7 @@
             <a href="tickets.html">Tickets</a>
         </div>
         <div class="admin-panel__link">
-            <a href="withdrawal.html">Withdrawal</a>
+            <a href="withdrawal.html" style="color: #E07A5F;">Withdrawal</a>
         </div>
         <div class="admin-panel__link">
             <a href="settings.html">Settings</a>
@@ -51,13 +51,13 @@
                         <tr>
                             <th scope="col" class="cell-little">time</th>
                             <th scope="col"> - withdrawal</th>
-                            <th scope="col" class="cell-little">currency</th>
+                            <th scope="col">currency</th>
                         </tr>
                         </thead>
                         <tr>
                             <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
                             <td aria-label="withdrawal">1000</td>
-                            <td aria-label="currency" class="cell-little">btc</td>
+                            <td aria-label="currency">btc</td>
                         </tr>
                     </table>
                 </div>
@@ -70,7 +70,7 @@
                         <tr>
                             <th scope="col" class="cell-little">time</th>
                             <th scope="col"> + deposits</th>
-                            <th scope="col" class="cell-little">currency</th>
+                            <th scope="col">currency</th>
                         </tr>
                         </thead>
                         <tr>
@@ -91,19 +91,19 @@
                         <tr>
                             <th scope="col" class="cell-little">time</th>
                             <th scope="col">value</th>
-                            <th scope="col" class="cell-little">currency</th>
+                            <th scope="col">currency</th>
                         </tr>
                         </thead>
                         <tr>
                             <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
                             <td aria-label="value">- 1000</td>
-                            <td aria-label="amount" class="cell-little">btc</td>
+                            <td aria-label="amount">btc</td>
 
                         </tr>
                         <tr>
                             <td aria-label="time" class="cell-little">2019-11-01 11:11</td>
                             <td aria-label="value">+ 500</td>
-                            <td aria-label="amount" class="cell-little">btc</td>
+                            <td aria-label="amount">btc</td>
                         </tr>
                     </table>
                 </div>
@@ -138,11 +138,11 @@
                         <thead>
                         <tr>
                             <th scope="col" class="cell-little">time</th>
-                            <th scope="col" class="cell-little">pairs</th>
-                            <th scope="col" class="cell-little">side</th>
-                            <th scope="col" class="cell-little">price</th>
-                            <th scope="col" class="cell-little">amount</th>
-                            <th scope="col" class="cell-little">status</th>
+                            <th scope="col">pairs</th>
+                            <th scope="col">side</th>
+                            <th scope="col">price</th>
+                            <th scope="col">amount</th>
+                            <th scope="col">status</th>
                         </tr>
                         </thead>
                         <tr>
@@ -165,104 +165,108 @@
                 </div>
             </div>
             <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>open orders</span></div>
-                <div class="admin-panel__content">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th scope="col" class="cell-little">time</th>
-                            <th scope="col">id</th>
-                            <th scope="col">pairs</th>
-                            <th scope="col">side</th>
-                            <th scope="col">type</th>
-                            <th scope="col">amount</th>
-                            <th scope="col">price</th>
-                            <th scope="col">filled</th>
-                            <th scope="col">counterparty</th>
-                            <th scope="col">commission</th>
-                            <th scope="col">commission currency</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
-                            <td aria-label="id">333444</td>
-                            <td aria-label="pairs">BTT/USDT</td>
-                            <td aria-label="side" style="color:red">sell</td>
-                            <td aria-label="type">market</td>
-                            <td aria-label="amount">15,977.00000000</td>
-                            <td aria-label="price">0.0007650</td>
-                            <td aria-label="filled">0</td>
-                            <td aria-label="counterparty">user 1</td>
-                            <td aria-label="commission">0.21</td>
-                            <td aria-label="commission currency">usdt</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
-                            <td aria-label="id">333444</td>
-                            <td aria-label="pairs">ETH/USDT</td>
-                            <td aria-label="side" style="color:green">buy</td>
-                            <td aria-label="type">limit</td>
-                            <td aria-label="price">170</td>
-                            <td aria-label="amount">0.08599</td>
-                            <td aria-label="filled">0</td>
-                            <td aria-label="counterparty">user 2</td>
-                            <td aria-label="commission">0.2</td>
-                            <td aria-label="commission currency">usdt</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <a href="open-orders-user1.html">
+                    <div class="admin-panel__title"><span>open orders</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col" class="cell-little">time</th>
+                                <th scope="col">id</th>
+                                <th scope="col">pairs</th>
+                                <th scope="col">side</th>
+                                <th scope="col">type</th>
+                                <th scope="col">amount</th>
+                                <th scope="col">price</th>
+                                <!--<th scope="col">filled</th>-->
+                                <!--<th scope="col">counterparty</th>-->
+                                <th scope="col">fee</th>
+                                <th scope="col">fee currency</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
+                                <td aria-label="id">333444</td>
+                                <td aria-label="pairs">BTT/USDT</td>
+                                <td aria-label="side" style="color:red">sell</td>
+                                <td aria-label="type">market</td>
+                                <td aria-label="amount">15,977.000</td>
+                                <td aria-label="price">0.0007650</td>
+                                <!--<td aria-label="filled">0</td>-->
+                                <!--<td aria-label="counterparty">user 1</td>-->
+                                <td aria-label="fee">0.21</td>
+                                <td aria-label="fee currency">usdt</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
+                                <td aria-label="id">333444</td>
+                                <td aria-label="pairs">ETH/USDT</td>
+                                <td aria-label="side" style="color:green">buy</td>
+                                <td aria-label="type">limit</td>
+                                <td aria-label="price">170</td>
+                                <td aria-label="amount">0.08599</td>
+                                <!--<td aria-label="filled">0</td>-->
+                                <!--<td aria-label="counterparty">user 2</td>-->
+                                <td aria-label="fee">0.2</td>
+                                <td aria-label="fee currency">usdt</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="admin-panel__blocks">
             <div class="admin-panel__block">
-                <div class="admin-panel__title"><span>trades history</span></div>
-                <div class="admin-panel__content">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th scope="col" class="cell-little">time</th>
-                            <th scope="col">id</th>
-                            <th scope="col">pairs</th>
-                            <th scope="col">side</th>
-                            <th scope="col">type</th>
-                            <th scope="col">amount</th>
-                            <th scope="col">price</th>
-                            <th scope="col">value</th>
-                            <th scope="col">counterparty</th>
-                            <th scope="col">fee</th>
-                            <th scope="col">fee currency</th>
-                        </tr>
-                        </thead>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
-                            <td aria-label="id">333444</td>
-                            <td aria-label="pairs">BTT/USDT</td>
-                            <td aria-label="side" style="color:red">sell</td>
-                            <td aria-label="type">market</td>
-                            <td aria-label="amount">15,977.00000000</td>
-                            <td aria-label="price">0.0007650</td>
-                            <td aria-label="filled">0</td>
-                            <td aria-label="counterparty">user 1</td>
-                            <td aria-label="fee">0.21</td>
-                            <td aria-label="fee currency">usdt</td>
-                        </tr>
-                        <tr>
-                            <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
-                            <td aria-label="id">333444</td>
-                            <td aria-label="pairs">ETH/USDT</td>
-                            <td aria-label="side" style="color:green">buy</td>
-                            <td aria-label="type">limit</td>
-                            <td aria-label="price">170</td>
-                            <td aria-label="amount">0.08599</td>
-                            <td aria-label="filled">0</td>
-                            <td aria-label="counterparty">user 2</td>
-                            <td aria-label="fee">0.2</td>
-                            <td aria-label="fee currency">usdt</td>
-                        </tr>
-                    </table>
-                </div>
+                <a href="trades-history-user1.html">
+                    <div class="admin-panel__title"><span>trades history</span></div>
+                    <div class="admin-panel__content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th scope="col" class="cell-little">time</th>
+                                <th scope="col">id</th>
+                                <th scope="col">pairs</th>
+                                <th scope="col">side</th>
+                                <th scope="col">type</th>
+                                <th scope="col">amount</th>
+                                <th scope="col">price</th>
+                                <!--<th scope="col">value</th>-->
+                                <!--<th scope="col">counterparty</th>-->
+                                <th scope="col">fee</th>
+                                <th scope="col">fee currency</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td aria-label="time" class="cell-little">2019-12-12 12:32</td>
+                                <td aria-label="id">333444</td>
+                                <td aria-label="pairs">BTT/USDT</td>
+                                <td aria-label="side" style="color:red">sell</td>
+                                <td aria-label="type">market</td>
+                                <td aria-label="amount">15,977.000</td>
+                                <td aria-label="price">0.0007650</td>
+                                <!--<td aria-label="filled">0</td>-->
+                                <!--<td aria-label="counterparty">user 1</td>-->
+                                <td aria-label="fee">0.21</td>
+                                <td aria-label="fee currency">usdt</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="time" class="cell-little">2019-01-12 11:32</td>
+                                <td aria-label="id">333444</td>
+                                <td aria-label="pairs">ETH/USDT</td>
+                                <td aria-label="side" style="color:green">buy</td>
+                                <td aria-label="type">limit</td>
+                                <td aria-label="price">170</td>
+                                <td aria-label="amount">0.08599</td>
+                                <!--<td aria-label="filled">0</td>-->
+                                <!--<td aria-label="counterparty">user 2</td>-->
+                                <td aria-label="fee">0.2</td>
+                                <td aria-label="fee currency">usdt</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
             </div>
             <div class="admin-panel__block">
                 <div class="admin-panel__title"><span>tickets</span></div>
