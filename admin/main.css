@@ -35,13 +35,26 @@ form {
     padding-right: 4rem;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .admin-panel__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .admin-panel__header {
+        justify-content: center;
+    }
 }
 
 .admin-panel__logo {
@@ -61,11 +74,16 @@ form {
     padding: 2rem 1rem;
 }
 
+@media (max-width: 992px) {
+    .admin-panel__link {
+        padding: .5rem .5rem;
+    }
+}
+
 .admin-panel__link:hover a {
     color: #E07A5F;
     transition: .5s;
 }
-
 
 .admin-panel__settings {
     padding: 2rem 1rem;
@@ -85,12 +103,26 @@ form {
     height: 50vh;
 }
 
+@media (max-width: 768px) {
+    .admin-panel__blocks {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        height: 100vh;
+    }
+}
+
 .settings__blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
     margin: 1rem;
-    height: 85vh;
+    height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .settings__blocks {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        height: 100vh;
+    }
 }
 
 .withdrawal-review__blocks {
@@ -103,14 +135,29 @@ form {
 
 .reports__blocks {
     display: grid;
-    grid-template-columns: 50fr 10fr;
+    grid-template-columns: 50fr 15fr;
     grid-gap: 1rem;
     height: 85vh;
 }
 
+@media (max-width: 992px) {
+    .reports__blocks {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .reports__blocks .admin-panel__block:nth-child(1) {
+        order: 2;
+    }
+
+    .reports__blocks .admin-panel__block:nth-child(2) {
+        order: 1;
+    }
+}
+
 .admin-panel__block {
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
@@ -138,7 +185,7 @@ form {
     display: block;
     position: sticky;
     top: 0;
-    padding: .5rem 0 0 .5rem;
+    padding: .5rem 0 .5rem .5rem;
     color: #000;
     font-weight: 600;
     background-color: #FFFFFF;
@@ -148,7 +195,6 @@ form {
 .admin-panel__content {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
 }
 
 .reports-panel__content {
@@ -228,7 +274,7 @@ table {
     max-width: 100%;
     width: 100%;
     border-collapse: collapse;
-    font-size: .8rem;
+    font-size: .7rem;
     letter-spacing: -1px;
     white-space: nowrap
 }
@@ -256,7 +302,7 @@ td:last-child {
 }
 
 td, th {
-    padding: .5rem .5rem;
+    padding: .3rem .3rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -265,7 +311,7 @@ td, th {
     }
 
     table caption {
-        font-size: 17px;
+        font-size: .7rem;
     }
 
     table thead {
@@ -306,18 +352,25 @@ td, th {
 
 .settings__title {
     padding: 0 .5rem;
-    font-size: .8rem;
+    font-size: .7rem;
     border-bottom: none;
 }
 
 .settings__button {
     font-family: 'Roboto Mono', monospace;
+    margin: .5rem;
     padding: .3rem 1rem;
-    font-size: .8rem;
+    font-size: .7rem;
     border: 0;
     background-color: #77b6a287;
     transition: .5s;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .settings__button {
+        margin: 2rem 0 1rem.5rem;
+    }
 }
 
 .settings__button:hover, .settings__button button:active, .settings__button:focus {
@@ -329,7 +382,7 @@ td, th {
     height: 1rem;
     padding: .3rem;
     font-family: 'Roboto Mono', monospace;
-    font-size: .8rem;
+    font-size: .7rem;
     border-color: #cfcfcf8f;
     border-style: solid;
     border-width: 1px;
@@ -351,6 +404,12 @@ td, th {
 
 .cell-little {
     width: 20%;
+}
+
+@media (max-width: 768px) {
+    .cell-little {
+        width: unset;
+    }
 }
 
 /*Form*/
@@ -414,6 +473,12 @@ td, th {
     margin-top: -1rem;
 }
 
+@media (max-width: 768px) {
+    .settings__content {
+        margin-top: 1rem;
+    }
+}
+
 .tickets-page__add-new a {
     color: #8CBCB9;
 }
@@ -425,7 +490,8 @@ input[type="time" i] {
     cursor: default;
     -webkit-appearance: menulist;
     background-color: #ffffff;
-    width: 10em;
+    font-size: .7rem;
+    width: 9em;
     overflow: hidden;
     padding-left: 0.5rem;
     border-width: 1px;
@@ -446,7 +512,8 @@ input[type="date" i] {
     cursor: default;
     -webkit-appearance: menulist;
     background-color: #ffffff;
-    width: 10em;
+    font-size: .7rem;
+    width: 9em;
     overflow: hidden;
     padding-left: 0.5rem;
     border-width: 1px;
@@ -463,12 +530,25 @@ input[type="date" i]:focus {
 .settings-lists {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: .5rem;
 }
 
+@media (max-width: 992px) {
+    .settings-lists {
+        flex-direction: row;
+    }
+}
+
 .settings-lists a {
     padding: .5rem .5rem;
+}
+
+@media (max-width: 992px) {
+    .settings-lists a {
+        flex-direction: row;
+    }
 }
 
 .settings-lists a:hover {
