@@ -214,6 +214,13 @@ form {
     margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+    .reports-panel__settings-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 .reports-panel__setting {
     display: flex;
     justify-content: space-between;
